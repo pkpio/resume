@@ -2,4 +2,4 @@
 *.aux
 *.bak
 *.log
-
+*.synctex.gz

@@ -1,0 +1,283 @@
+%-----------------------------------------------------------------------
+% @brief    LaTeX2e Long Resume for Praveen Kumar Pendyala
+% @author   Praveen Kumar Pendyala
+% @info     Based on Latex Resume Template by Chris Paciorek and Kamil K Wojcicki
+%			Modified by Praveen Kumar Pendyala
+%           http://www.biostat.harvard.edu/~paciorek/
+%	    	http://kamil.dsplabs.com.au
+
+%-----------------------------------------------------------------------
+\documentclass[margin,line]{resume}
+\usepackage{multirow}
+\usepackage{url}
+
+\begin{document}
+%\lfoot{\small \
+
+
+\name{\Large Praveen Kumar} \vspace{55mm}
+\begin{resume}
+
+%-----------------------------------------------------------------------
+% Contact Information
+\section{\mysidestyle Contact\\Information}
+
+    {\sc Permanent Address}				\hfill {\sc mobile}: +91 882-882-9765								\vspace{0mm}\\\vspace{0mm}%
+    5-139/1, Vadisaleru,				\hfill {\sc email}: \url{mail@pkp.io}						\vspace{0mm}\\\vspace{0mm}%
+    Rajahumdry, Andhra Pradesh,			\hfill {} \url{https://pkp.io}								\vspace{0mm}\\\vspace{0mm}%
+    India - 533294				\hfill {}\url{https://github.com/praveendath92}
+        
+%-----------------------------------------------------------------------
+% Interests
+\section{\mysidestyle Interests}
+Hardware security, Physically Unclonable Functions, Computer architecture, Embedded Systems
+\vspace{-2mm}
+
+%-----------------------------------------------------------------------  
+% Education
+\section{\mysidestyle Education}
+		
+		{\bf Technische Universitat Darmstadt}, Hessen, Germany\\
+		Masters in Distributed Software Systems,\\
+        \textit{\hspace*{2mm}GPA of} \textbf{1.80} \textit{on German scale (converts to 3.6/4.0 in US system)}
+        \vspace{-2mm}
+		
+		{\bf Indian Institute of Technology}, Mumbai, India\\
+		Bachelors in Electrical Engineering,\\
+        \textit{\hspace*{2mm}Cumulative Performance Index (CPI) of} \textbf{7.16} \textit{on a scale of 10.00}
+        \vspace{-2mm}
+        
+        {\bf Vijaya Ratna Junior College}, Hyderabad, India\\
+		Intermediate (class XII), BIE Andhra Pradesh,\\
+        \textit{\hspace*{2mm}Percentage:} \textbf{94.8\%} \textit{(2010)}
+        \vspace{-2mm}
+        
+        {\bf Gowtham Model School}, Rajahmundry, India\\
+		Secondary school education (class X),\\
+        \textit{\hspace*{2mm}Percentage:} \textbf{90.3\%} \textit{(2008)}
+        
+%-----------------------------------------------------------------------
+%%Research Projects
+\section{\mysidestyle Publications}
+	Kong, J., F. Koushanfar, P. K. Pendyala, A. - R. Sadeghi, and C. Wachsmann; "PUFatt: Embedded Platform Attestation Based on Novel Processor-Based PUFs"	\hfill {\textit{Design Automation Conference (DAC) 2014, Best paper candidate, San Francisco.}}\\
+	\vspace{-2mm}
+	
+			
+%-----------------------------------------------------------------------
+%%Research Projects
+\section{\mysidestyle Research Experience}
+	
+% DAC paper project
+    {\bf Implementing dual core ALU based PUF on FPGA with symmetric block placement and PDL tuning} \\
+    {\bf Guide: Prof. Farinaz Koushanfar, Dr. Joonho Kong} \hfill \textit{Autumn 2013} \\
+    {\it Adaptive Computing and Embedded Systems Lab, Rice University} \\
+	Employed symmetric placement of logic blocks in the two cores of dual core PUF to obtain a symmetric design. Proposed and implemented Programmable Delay Logic to match the remaining delay skews due to routing assymetries. Evaluated the whole model by collecting results on intra-chip variations and response entropy/stability for different/identical challenges. Also implemented the model on two different Xilinx XUPV5 FPGA chips to evaluate inter-chip variations. Results collected are used for proof-of-concept in the paper submitted to the Design Automation Conference, 2014. Paper accepted on Feb., 2014.
+	
+% BTP
+	{\bf  Undergraduate Thesis: APIs to access DRAM of a virtex 5 FPGA} \\
+	{\bf Guide: Prof. Sachin Patkar} 	\hfill \textit{Autumn 2013} \\
+	{\it Department of Electrical Engineering, IIT Bombay}\\
+	Implemented APIs which facilitate sending huge amounts of data (~250MB) from PC to FPGA. Also, developed  modules to access this data from DRAM for computations within the FPGA. Data communication between FPGA and PC achieved using Microsoft SIRC and DRAM access using Memory Interface Generator (MIG) tools.
+	
+% Rice task 1
+    {\bf Interface, Testing and Evaluation of an ultra-low power current based PUF} \\
+    {\bf Guide: Prof. Farinaz Koushanfar} \hfill \textit{Summer 2013} \\
+    {\it Adaptive Computing and Embedded Systems Lab, Rice University} \\
+	Designed the tester to evaluate a PUF chip. Employed Microsoft SIRC for FPGA-PC communication and developed verilog modules for communication with the PUF chip. Data (challenges) received by FPGA is serially transmitted to PUF - Physically Unclonable Function - A module used extensively in hardware security. The responses of the chip are read back and transmitted to PC for further analysis.
+	
+% Rice task 2
+    {\bf Analysis of measurement circuits and feasibility of implementation on FPGA} \\
+    {\bf Guide: Prof. Farinaz Koushanfar} \hfill \textit{Summer 2013} \\
+    {\it Adaptive Computing and Embedded Systems Lab, Rice University} \\
+    Analyzed delay measurement circuits, REBEL (Regional delay based  logic) – precision of 0.1 nanoseconds and TDC (Time to Digital convertor) – precision of 0.01 nanoseconds, and the feasibility of their implementation on FPGA without any standalone modules.
+	
+% WEL lab 2012 work
+    {\bf Microcontroller board development and interfacing} \\
+    {\bf Guide: Prof. M. B. Patil} 	\hfill \textit{Summer 2012} \\
+    {\it Department of Electrical Engineering, IIT Bombay}\\
+	Worked on the development of a Microcontroller board using 89c5132 microcontroller chip. Interfaced TWI, SPI, watchdog timer, timers and counters of the chip and external slaves – Graphic LCD, Hexpad, and Amplifier circuit with microcontroller. Also attempted to build a low cost MP3 player.
+	
+%-----------------------------------------------------------------------
+% Academic Projects
+\section{\mysidestyle Academic \\ Projects}
+	\vspace{0mm}
+	
+% VLSI CAD project
+	{\bf Greedy algorithm for activity and task scheduling} \\
+    {\bf Guide: Prof. Sachin Patkar} 	\hfill \textit{Autumn 2013} \\
+    { \it Course: Foundations of VLSI CAD, Electrical Engineering}\\
+	Implemented greedy algorithm for activity and task scheduling in Scilab, C++ and Python. Analysed the time order and actual execution time for 3 different implementations in the 3 languages - rudimentary scilab implementation with bubble sort, python implementation using in-built objects sort, c++ implementation with heap sort.
+	
+% Image processing
+	{\bf Image processing} \\
+    {\bf Guide: Prof. Arjun Arunachalam} 	\hfill \textit{Autumn 2012} \\
+    { \it Course: Image processing, Electrical Engineering}\\
+	Improved corrupted images of an MRI scan of the brain using the concept of Radon transform. Performed iterative image reconstruction techniques for image enhancement in MATLAB.
+	
+% Greed4Speed
+	{\bf Gravity sensor based game development on FPGA} \\
+    {\bf Guide: Prof. J. John, Prof. M. B. Patil} 	\hfill \textit{Spring 2012} \\
+    { \it Course: Digital Circuits Lab}\\
+    Created generic libraries in Verilog for interfacing LCD display unit with FPGA and special focus on modularity. Employed a G-sensor for intuitive Human-Machine interaction to maximize end user experience. The game essential has objects coming in seven lanes and the target is to direct the main object, using controller, from crashing. Also implemented a over-time level up mechanism which makes the speeds of oncoming traffic a function of time.
+
+% Opampt design
+	{\bf Opamp design} \\
+    {\bf Guide: Prof. Anil Kottantharayil} 	\hfill \textit{Spring 2012} \\
+    { \it Course: Analog Lab}\\
+    Designed a 5-stage opamp using matched n-p-n and BJT (n-p-n and p-n-p) transistors. The charecteristics of the opamp are gain: 10\textsuperscript{5} v/v, input resistance: 100 ohm, output resistance: 10\textsuperscript{3} ohm, CMRR: 80dB. We used two stages for resistance matching, two more for gain and one for CMRR.
+    
+% Optical mouse
+	{\bf Hand held scanner from Optical mouse} \\
+    {\bf Guide: Prof. Vasi} 	\hfill \textit{Spring 2011} \\
+    { \it Course: Introduction to Electronics}\\
+    Hand held scanner using components of an Optical mouse and a 10 page termpaper describing its internal working mechanism in detail.
+	
+%CS101
+	{\bf Classical Pocket tanks game using C++} \\
+    {\bf Guide: Prof. D. B. Patak} 	\hfill \textit{Autumn 2010} \\
+    { \it Course: Introduction to Computer Programming \& Utilization, Computer Sciences}\\
+	Developed a version of the classical pocket tanks game, Programming in C++ and using API based EzWindows for Graphical Interface on Linux.
+
+\vspace{3mm}
+
+%-----------------------------------------------------------------------
+% Personal Projects
+\section{\mysidestyle Personal \& Miscellaneous Projects}
+\vspace{0mm}
+
+% GSoC 2014
+    {\bf Google Summer of Code 2014} \\
+    {\bf Guide: Vladimir Pantelic} 	\hfill \textit{Summer 2014} \\   
+	Working with Beagleboard.org to implement a Linux kernel USB driver for Android device to act as a remote display and controller for Linux over USB using Android Open Accessory Protocol.
+	
+% MIT Media labs workshop
+    {\bf MIT India Health Tech 2014} \\
+    {\bf Guide: Achuta Kadambi, MIT Media Labs} 	\hfill \textit{May 2014} \\   
+	One of the 120 students from India selected to participate in the MIT Media Labs India Health Tech workshop. Developed a prototype to stich the retinal images collected from an ordinary split lamp for advanced retinal analysis.
+	
+% MIT AITI
+    {\bf MIT AITI Program project} \\
+    {\bf Guide: Dr. Bryan Drake, MIT} 	\hfill \textit{June 2012- August 2012} \\   
+	One of the 45 students from IIT Bombay selected to participate in the  Massachusetts Institute of Technology Accelerating Information Technology Initiative (AITI) program. Developed the prototype of an Android application that gives a one touch alert with location to notify about an emergency. Pitched the idea \& demonstrated the prototype at MIT-AITI startup showcase.
+	
+% MDroid
+	{\bf Android application development for Moodle} \\
+    {\bf Web n Coding Club, IIT Bombay} 	                                \hfill \textit{Summer 2012} \\ 
+	 I developed an Android application for Moodle. The application has more than 50,000 downloads. Moodle is an Open Source Course Management System.
+	
+% TumTumTracker
+    {\bf Institute bus tracking system} \hfill \textit{December 2012 - present} \\
+    We designed and developed a novel way to track vehicles confined in a small campus using Xbee mesh network. I'm one of the 3 core team members of the team. Developed and proving support to the Web and Android applications along with minor contributions to the Microcontroller coding for Xbee communication.
+    	
+% urjtag Android
+    {\bf Facilitating FPGA/Microcontroller programming from Android device} \hfill \textit{Autumn 2012} \\
+     Cross compiled the source code of an FPGA programmer (urjtag), written in C, using NDK tools to generate an Android executable thereby porting it to Android. Investigated into and found appropriate substitutes for the dependencies and cross compiled the dependent libraries in case no substitutes are available. The current constraint is the lack of jtag driver supprt for Android.
+    	
+% Grid fortune
+    {\bf Analysis of power consumption by smart meters} \hfill \textit{Summer 2012} \\
+     I ran algorithms on the Green Button Data, an emerging format of data for power consumption, to predict possible savings, abnormally high usage, peak usage timings, alternative sources and this was the only submission from India in United States of America Energy Department competition. The algorithms run on huge data sets on the order of 1 million data points extracted from xml files of size more than 7 MB. All processing is done using PHP and MySQL.
+    	
+% Other Android works
+    {\bf Other Android development activities} \hfill \textit{2011 - 2014} \\
+    Developed an app for promoting Literature at IIT Bombay (2014), Anti-theft application that automatically takes picture of intruder on wrong passcode (2012), Jelly bean notification demonstration app (2012).
+    	
+% Other Web work
+    {\bf Other Web development activities} \hfill \textit{2010 - 2014} \\
+    Developed the administrator web interface of literature for IIT Bombay (2014), Developed the complete backend for an online shopping cart as a single member (2011), A Fully functional machinery website using Google maps in a team of 5 (2011 winter), Facebook application in a team of 3 (2010 summer)
+    
+    
+%-----------------------------------------------------------------------
+% Test Scores
+
+\section{\mysidestyle Test Scores}
+%\vspace{0mm}
+\begin{list1}  
+\item \textbf{GRE:} \textit{Verbal:} 148/170, \textit{Quantitative:} 165/170, \textit{Writing:} 4.0/6.0
+\item \textbf{TOEFL:} \textit{Total:} 99/120 (\textit{Reading:} 26/30, \textit{Listening:} 24/30, \textit{Speaking:} 23/30, \textit{Writing:} 26/30)
+\end{list1}
+
+%-----------------------------------------------------------------------
+% Scholastic Achievements
+
+\section{\mysidestyle Scholastic Achievements}
+%\vspace{0mm}
+\begin{list1}
+\item Recipient of A. Richard Newton Young Student Fellowship at the Design Automation Conference (DAC), San Francisco, 2014.
+\item Recipient of Indian Association for Research in Computing Science grant, 2013.
+\item Secured All India category Rank 1 in IIT JEE 2010 among 470,000 students all over India
+\item Secured All India category Rank 1 in ISAT (Test for admission to Indian Institute of Space Technology), 2010
+\item Shortlisted for KVPY (Kishore Vaigyanik Protsahan Yojana) scholarship awarded by the Government of India, 2010
+\item Secured District 1\textsuperscript{st} in Ramanujan Maths Talent Test 2005 conducted by the Ramunujan Mathematics Academy
+\item Secured District 3\textsuperscript{rd} in Ramanujan Maths Talent Test 2006 conducted by the Ramunujan Mathematics Academy
+\end{list1}
+
+\pagebreak
+
+%-----------------------------------------------------------------------
+% Extra curricular
+
+\section{\mysidestyle Extra-Curricular Activities}
+%\vspace{0mm}
+\begin{list1}
+\item {\bf 1st in Institute hack night:} Participated as a one member team and developed an anti-theft Android application, MugShot. It silently captures the face of intruder, as an anti-theft measure, on failing to unlock the device. Also an active participant in Yahoo HackU and other coding events.
+\item {\bf Guinness world record:} Part of the Guinness world record of highest number of people solving a Rubik’s cube simultaneously, set by IIT Bombay.
+\item {\bf Blogging:} maintaining my own technical blog which has got 130,000+ hits so far.
+\end{list1}
+
+	
+%-----------------------------------------------------------------------
+% Technical Skills
+
+\section{\mysidestyle Technical Skills}
+\vspace{0mm}
+	\begin{description}
+	\item [Programming:] {Assembly, Kernel C, C, C++, Java, Python, Verilog (HDL), BlueSpec}
+	\item [Operating Systems:] {Linux (Debian, Ubuntu, Fedora), Windows}
+	\item [Analysis and Publishing Tools:] {Matlab, Scilab, R, \LaTeX}
+	\item [Electronic Design Tools:] {Xilinx ISE (all), Quartus, Keil, LabView, Eagle, LTSpice, NGSpice}
+	\item [FPGAs:] Xinilx XUPV5, ML505, ML605, Altera De0nano
+	\item [Microcontrollers:] 8085 (microprocessor), 8051 family, Raspberry Pi
+	\item [Web Development:] HTML, CSS, JavaScript, Ajax, PHP, MySQL
+	\item [APIs:] Android, Google Maps - Android V2, Web V3
+	\end {description}
+
+
+%-----------------------------------------------------------------------
+%Courses
+\section{\mysidestyle Relevant Courses}
+\vspace{0mm}
+    {\bf Electrical Engineering:} \\
+	Processor Design, System Design, Testing and Verification of VLSI Circuits, VLSI Design Lab, Advanced computing for electrical engineers, Foundations of VLSI CAD, Microprocessors, Digital systems, Image processing, Signals and systems, Control systems, Communication systems, Analog circuits, Network theory, Radar systems, Electromagnetic waves, Electronic Devices \& Circuits\\
+    {\bf Mathematics:} \\
+	Probability \& Random Processes, Calculus, Linear Algebra, Data Analysis and Interpretation, Complex Analysis, Differential Equations I, Differential Equations II
+	
+%-----------------------------------------------------------------------
+%References
+\section{\mysidestyle References}
+	\begin{list1}
+    
+	\item \textbf{Prof. Farinaz Koushanfar} (Summer Internship Guide)\\
+	Department of Electrical and Computer Engineering,\\
+	Rice University, Houston, USA\\
+	Email: \url {farinaz@rice.edu}\\
+	% Homepage: \\
+
+	\item \textbf{Prof. Sachin Patkar} (Undergraduate Research Thesis Guide)\\
+	Department of Electrical Engineering,\\
+	IIT Bombay, Mumbai, India\\
+	Email: \url {patkar@ee.iitb.ac.in}\\
+
+	\item \textbf{Dr. Joonho Kong} (Research Paper Co-Author and Guide)\\
+	Adaptive Computing and Embedded Systems (ACES) Lab,\\
+	Rice University, Houston, USA\\
+	Email: \url{joonho.kong@rice.edu}\\
+	% Homepage: \\
+    
+	\end{list1}
+%-----------------------------------------------------------------------
+\end{resume}
+\end{document}
+
+%-----------------------------------------------------------------------
+% EOF
+
