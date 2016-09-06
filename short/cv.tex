@@ -1,17 +1,16 @@
 % !TEX program = XeLaTeX
 \documentclass[]{friggeri-cv}
-\addbibresource{bibliography.bib}
 
 \begin{document}
-\header{Praveen Kumar }{Pendyala}
-       {Android developer | Linux enthusiast | Web hobbyist}
+\header{Praveen Kumar }{Pendyala}{Android developer | Linux enthusiast | Web hobbyist}
 
 % In the aside, each new line forces a line break
 \begin{aside}
   \section{Info}
-    DOB: 26.10.1992
-    \href{https://pkp.io}{https://pkp.io}
-    \href{https://github.com/praveendath92}{github/praveendath92}
+    \noindent\rule{3cm}{0.5pt}
+    %DOB: 26.10.1992
+    \href{http://pkp.io}{http://pkp.io}
+    \href{https://github.com/praveendath92}{github/praveendath92}    
   \section{Contact}
     \href{mailto:mail@pkp.io}{mail@pkp.io}
     (+49) 176-833-55188
@@ -32,11 +31,12 @@
     Git, SVN, MySQL, Asterisk, Xilinx ISE, Jekyll, \LaTeX, Moodle
   \section{Platforms}
     Linux, Windows, Mac OSX, Beaglebone, Google App Engine
+  \section{Note}
+    \noindent\rule{3cm}{0.5pt}
+    Only included the most recent or major accomplishments in each section. For complete list, please refer to the web links in info section.
 \end{aside}
 
-
 \section{Education}
-
 \begin{entrylist}
   \entry
     {since 2014}
@@ -51,18 +51,17 @@
 \end{entrylist}
 
 \section{Experience}
-
 \begin{entrylist}
   \entry
     {since 2014}
     {Center for Advanced Security Research Darmstadt}
     {Research Assistant}
     {\emph{Working in Cloud, Android and Mobile security.}}
-  \entry
-    {05–08 2015}
-    {Google Summer of Code}
-    {Supporting mentor}
-    {\emph{Linux drivers for remote access from Android.}}
+%  \entry
+%    {05–08 2015}
+%    {Google Summer of Code}
+%    {Supporting mentor}
+%    {\emph{Linux drivers for remote access from Android.}}
   \entry
     {05–08 2014}
     {Google Summer of Code}
@@ -78,15 +77,23 @@
 \section{Publications}
 \begin{entrylist}
   \entry
+    {2017}
+    {Phonion: Practical Protection of Metadata in Telephony Networks}
+    {Proceedings on Privacy Enhancing Technologies (PoPETs) 2017}
+    {}
+    %{\emph{Stephan Heuser, Bradley Reaves, Praveen Kumar Pendyala, Henry Carter, Alexandra Dmitrienko, Negar Negar, William Enck, Ahmad-Reza Sadeghi and Patrick Traynor}}  
+  \entry
     {2016}
     {DroidAuditor: Forensic Analysis of Application-Layer Privilege Escalation Attacks on Android}
-    {20th Financial Cryptography and Data Security Conference}
-    {\emph{S. Heuser, M. Negro, P. K. Pendyala, and A. - R. Sadeghi}}
-  \entry
-    {2014}
-    {PUFatt: Embedded Platform Attestation Based on Novel Processor-Based PUFs}
-    {Best paper candidate, 51st Design Automation Conference}
-    {\emph{Kong, J., F. Koushanfar, P. K. Pendyala, A. - R. Sadeghi, and C. Wachsmann}}
+    {Financial Cryptography and Data Security Conference 2016}
+    {}
+    %{\emph{Stephan Heuser, Marco Negro, Praveen Kumar Pendyala, and Ahmad-Reza Sadeghi}}   
+%  \entry
+%    {2014}
+%    {PUFatt: Embedded Platform Attestation Based on Novel Processor-Based PUFs}
+%    {Best paper candidate, 51st Design Automation Conference}
+%    {\emph{Kong, J., F. Koushanfar, P. K. Pendyala, A. - R. Sadeghi, and C. Wachsmann}}
+
 \end{entrylist}
 
 \section{Achievements}
@@ -94,37 +101,32 @@
   \item Winners of MAPPING Competition and \euro 20,000 prize money, CeBIT 2016, Hannover
   \item A. Richard Newton Young Student Fellow Award, DAC 2014, San Francisco
   \item Recipient of Indian Association for Research in Computing Science grant, 2013
-  \item All India category Rank 1 among 470,000 students in IIT JEE 2010
+  %\item All India category Rank 1 among 470,000 students in IIT JEE 2010
 \end{itemize}
 ~
 
 \section{Projects}
 \begin{entrylist}
   \entry
-    {since 2012}
-    {MDroid - Moodle for Android}
-    {Android, Githooks, REST, Markdown}
-    {\emph{Creator of native Moodle app for Android with 75K+ downloads on Play Store.}}
-  \entry
-    {2016}
-    {Coursestats.de}
-    {AngularJS, PHP, Python, MySQL, REST API}
-    {\emph{Material designed webapp and API for community gathered course statistics.}}
-  \entry
-    {2015}
+    {2015–2016}
     {Omnishare}
     {Android, Cryptography, Dropbox Core APIs}
-    {\emph{Client side encryption of Cloud data with multi-device and file sharing support.}}
+    {\emph{Developed an Android application for client side encryption of data before uploading to cloud services like Dropbox. The system also supports simultaneous multiple device installation and secure file sharing.}}
   \entry
-    {2015}
+    {2014–2016}
     {Phonion}
     {Python, Java, Twilio, Asterisk, Google Voice, Selenium, Tor}
-    {\emph{An open, Tor like, Onion routing for phone calls to obfuscate call data records.}}
+    {\emph{Phonion is a Tor like anonymization network for Telephony or VoIP communications. Designed and implemented the Phonion architecture which offers better call quality than VoIP over Tor and supports offline calling.}}
   \entry
     {2014}
     {Android accessory driver}
     {Linux Kernel, Android accessory}
-    {\emph{Kernel driver to set any Android device into Accessory (ADK) mode.}}
+    {\emph{Developed a Kernel driver to setup any Android device into Accessory (ADK) mode. Also reused this as an independent module in developing a display driver for Linux on Android as part of Google Summer of Code.}}
+  \entry
+    {2012–2016}
+    {MDroid - Moodle for Android}
+    {Android, Githooks, REST, Markdown}
+    {\emph{Created a native open sourced Moodle application for Android. The app received over 75,000 downloads on Play Store and translated into 3 different languages by contributors.}}
 %  \entry
 %    {2014}
 %    {Programmable Delay Logic}

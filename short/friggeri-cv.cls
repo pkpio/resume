@@ -89,7 +89,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \RequirePackage{tikz}
 
 \newcommand{\rolefont}{%
-  \fontsize{14pt}{24pt}\selectfont%
+  \fontsize{13pt}{24pt}\selectfont%
   \thinfont%
   \color{white}%
 }
@@ -133,12 +133,12 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace{.5\parskip}
   {%
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}
+  \par\vspace{.5\parskip}
 }
 
 \renewcommand{\subsection}[1]{
@@ -283,7 +283,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \DeclareNameFormat{author}{%
   \small\addfontfeature{Color=lightgray}%
-  \ifblank{#3}{}{#3\space}#1%
+  %\ifblank{#3}{}{#3\space}#1%
   \ifthenelse{\value{listcount}<\value{liststop}}
     {\addcomma\space}
     {}%
@@ -307,5 +307,5 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6cm,top=2cm,right=1.5cm,bottom=0cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6cm,top=1.6cm,right=1.5cm,bottom=0cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
