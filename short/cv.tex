@@ -2,7 +2,7 @@
 \documentclass[]{friggeri-cv}
 
 \begin{document}
-\header{Praveen Kumar }{Pendyala}{Android developer | Testability advocate | Clean code enthusiast}
+\header{Praveen Kumar }{Pendyala}{In pursuit of building clean, efficient \& accessible tools to help everyone acheive more}
 
 % In the aside, each new line forces a line break
 \begin{aside}
@@ -13,25 +13,20 @@
         \href{https://github.com/praveendath92}{github/praveendath92}
     \section{Contact}
         \href{mailto:praveendath92@gmail.com}{praveendath92@gmail.com}
-        (+49) 176-833-55188
-        Wörthstraße 25, 
-        Fulda - 36037
-        Germany
+        (+44) 7763089654
+        W9 2JR, London
+        United Kingdom
     ~
     \section{Skills}
         \noindent\rule{3cm}{0.5pt}
     \section{Programming}
-        Java 8, Java 7, Python, PHP, JavaScript, Matlab, Kernel C
-    \section{Testing}
-        JUnit, Espresso, Mockito, Cucumber, Selenium, Robolectric
+        Java, Kotlin, Python, C++, JavaScript
     \section{Android}
-        MVP design pattern, Dagger 2, Material Design, Retrofit
-    \section{Web}
-        AngularJS, NodeJS, Npm, HTML5, REST APIs, Bootstrap, Jekyll
-    \section{Tools}
-        Git, Travis CI, Maven, Gradle, MySQL, \LaTeX
-    \section{Platforms}
-        Linux, Docker, Google App Engine, Heroku
+        Architecture Components, Proguard, Dex, Material design, Life-cycle, CameraX, OpenGL ES, Native code using C++, Benchmark, Profiler
+    \section{Build tools}
+        Gradle, Maven, Jenkins, Azure, Google App Engine
+    \section{Testing}
+        Unit testing, Automated UI testing, Smoke testing, AB testing, Experimentation, Performance bechmarking, Memory leak testing
     \section{MOOCs}
         Machine Learning 
         (grade: 97.3\%)
@@ -58,15 +53,21 @@
 \section{Experience}
     \begin{entrylist}
         \entry
-            {02-05 2017}
-            {Proemion GmbH, Fulda}
-            {Java Backend Developer}
-            {\emph{Responsible for developing APIs for our Data platform which handles over a billion data points per day. Improved Unit test coverage by 5\% using JUnit and Mockito, and developed Integration tests using Cucumber and Selenium.}}
+            {2017-now}
+            {Microsoft London, SwiftKey team}
+            {Software Engineer}
+            {\emph{Proposed and implemented a custom file format for SwiftKey Puppets that is 45x faster \& 4x smaller than the standard 3D format (FBX), and 800x faster \& 18x smaller than the existing format in use. Took full ownership in developing the file schema, a convertor to transform 3D assets from standard format, and a file loader to read data structures from the custom format.
+            \newline
+            \newline
+            Primary contributor to the Puppets Android Rendering Engine built in C++ using OpenGL ES APIs. Implemented the Phong lighting model for Ambient and Directional lights. Rearchitectured the whole code to make it unit testable, integrated Google test framework and added over 70 unit tests. The engine is  capable of rendering over 200 FPS on very high end devices.
+            \newline
+            \newline
+            Contributed to the App size reduction of SwiftKey. Implemented coachmarks \& banners to highlight the custom themes feature. Developed a new internal tool to test keyboard performance in rapid typing scenarios, capable of detecting regressions with precision of 2 ms. }}
         \entry
             {2014–2017}
             {Center for Advanced Security Research Darmstadt}
-            {Java \& Android Developer}
-            {\emph{Successfully completed 3 different projects in Cloud security, Anonymous voice communications, and Analysis of attacks on Android. Co-authored 2 papers published in top tier conferences (one more in submission).}}
+            {Research assistant}
+            {\emph{Contributed to projects in Cloud security, Anonymous voice communications, and Analysis of attacks on Android. Co-authored 3 papers published in top tier conferences.}}
         \entry
             {05–08 2014}
             {Google Summer of Code}
@@ -74,8 +75,12 @@
             {\emph{Developed kernel display drivers for accessing the GUI of a Linux device on Android over USB interface. Improved the frame rate from an initial 10fps to 25fps by employing partial updates for only modified areas of UI and by implementing Run-length Encoding for loss-less, inline compression of image updates.}}
     \end{entrylist}
 
-\section{Achievements \& Publications}
+\section{Awards, Publications \& Talks}
 	\begin{entrylist}
+        \entry
+            {Tech-talk}
+            {Android App size reduction}{Londroid 2019. Hosted by Facebook London}
+            {\emph{Presented about my work on Proguard optimizations, R8 compiler and Install size investigation that contributed to reducing SwiftKey's download size by 50\% -- from 27.6 MB to 14.3 MB, and install size by 40\% -- from 81.5 MB to 48 MB}}
         \entry
             {Publication}
             {Phonion: Practical Protection of Metadata in Telephony Networks}{}
@@ -90,23 +95,5 @@
             {\emph{Financial Cryptography and Data Security Conference 2016.}}        
 	\end{entrylist}
 
-\section{Projects}
-    \begin{entrylist}
-        \entry
-            {2015–2016}
-            {Phonion}
-            {Java, Python, Twilio, Asterisk, Selenium}
-            {\emph{Phonion is an anonymization network for voice communications. Designed and implemented the Phonion architecture which offers 50\% lower latency and 30\% better voice quality than alternatives like VoIP over Tor network. Implemented a distributed resource locking mechanism in Java and Python for allocation of phone numbers from loosely co-operating entities.}}
-        \entry
-            {2015–2016}
-            {Omnishare}
-            {Java, Cryptography, Android, Dropbox and Google Drive APIs}
-            {\emph{Omnishare is an application that performs client side encryption of data before uploading to cloud storage services. Collaborated with a team of 5 in designing the encryption architecture. Developed the application using modular components and Factory design pattern in Java for abstracting different cloud APIs.}}
-        \entry
-            {2012–2016}
-            {MDroid - Moodle for Android}
-            {Java, REST APIs, Android, Git hooks, Markdown}
-            {\emph{Created and maintained a native open sourced Moodle application for Android. The application received over 80,000 downloads on Google Play Store.}}
-    \end{entrylist}
 
 \end{document}
