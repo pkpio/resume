@@ -1,0 +1,63 @@
+name: Publish Master
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Release with all CVs
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+    
+    - name: Build short CV
+      uses: dante-ev/latex-action@v0.2.0
+      with:
+        root_file: cv.tex
+        working_directory: short/
+        args: -xelatex -file-line-error -interaction=nonstopmode
+        compiler: latexmk
+
+    - name: Build long CV
+      uses: dante-ev/latex-action@v0.2.0
+      with:
+        root_file: resume.tex
+        working_directory: long/
+        compiler: latexmk
+        
+    - name: Create new release
+      id: create_release
+      uses: actions/create-release@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Latest CVs from ${{ github.ref }}
+        draft: false
+        prerelease: false
+
+    - name: Add short CV to latest release
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: short/cv.pdf
+        asset_name: cv-main.pdf
+        asset_content_type: application/pdf
+
+    - name: Add long CV to latest release
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: long/resume.pdf
+        asset_name: cv-full.pdf
+        asset_content_type: application/pdf
