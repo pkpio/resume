@@ -1,3 +1,6 @@
+![](https://github.com/praveendath92/resume/workflows/CI%20build/badge.svg?branch=master)
+![](https://github.com/praveendath92/resume/workflows/Publish%20Master/badge.svg?branch=master)
+
 # resume
 The place to brag!
 
