@@ -5,3 +5,4 @@
 *.synctex.gz
 *.run.xml
 *.bcf
+**/*.pdf

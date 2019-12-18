@@ -20,11 +20,11 @@
     \section{Skills}
         \noindent\rule{3cm}{0.5pt}
     \section{Programming}
-        Java, Kotlin, Python, C++, JavaScript
+        Java, Kotlin, Python, C++, TypeScript, Node
     \section{Android}
         Architecture Components, Proguard, Dex, Material design, Life-cycle, CameraX, OpenGL ES, Native code using C++, Benchmark, Profiler
     \section{Build tools}
-        Gradle, Maven, Jenkins, Azure, Google App Engine
+        Gradle, Maven, Jenkins, Azure DevOps, GitHub Workflows
     \section{Testing}
         Unit testing, Automated UI testing, Smoke testing, AB testing, Experimentation, Performance bechmarking, Memory leak testing
     \section{MOOCs}
@@ -56,18 +56,16 @@
             {2017-now}
             {Microsoft London, SwiftKey team}
             {Software Engineer}
-            {\emph{Proposed and implemented a custom file format for SwiftKey Puppets that is 45x faster \& 4x smaller than the standard 3D format (FBX), and 800x faster \& 18x smaller than the existing format in use. Took full ownership in developing the file schema, a convertor to transform 3D assets from standard format, and a file loader to read data structures from the custom format.
+            {\emph{Part of the Android team that delivers SwiftKey Keyboard to over 500 million users. The code base is predominantly Java, moving towards Kotlin \& tooling in multiple languages. My major contributions include:
+	    \newline 
+	    \newline
+	    Proposed and implemented a custom file format for Puppets (3D assets in SwiftKey) that is 45x faster \& 4x smaller than the standard 3D formats, and 800x faster \& 18x smaller than the existing format in use. I designed the file schema from scratch, created a convertor to transform assets from standard 3D format and implemented a file loader to read the custom format.
             \newline
             \newline
-            Primary contributor to the Puppets Android Rendering Engine built in C++ using OpenGL ES APIs. Implemented the Phong lighting model for Ambient and Directional lights. Rearchitectured the whole code to make it unit testable, integrated Google test framework and added over 70 unit tests. The engine is  capable of rendering over 200 FPS on very high end devices.
+	    Main contributor to the very light-weight and highly performant 3D rendering engine built for SwiftKey Puppets - it's under 550 KB and capable of rendering over 200+ FPS. Delivered the module with Unit tests, Integration tests, Memory leak tests, Performance tests and Visual Acceptance tests to ensure high reliability.   
             \newline
             \newline
-            Contributed to the App size reduction of SwiftKey. Implemented coachmarks \& banners to highlight the custom themes feature. Developed a new internal tool to test keyboard performance in rapid typing scenarios, capable of detecting regressions with precision of 2 ms. }}
-        \entry
-            {2014–2017}
-            {Center for Advanced Security Research Darmstadt}
-            {Research assistant}
-            {\emph{Contributed to projects in Cloud security, Anonymous voice communications, and Analysis of attacks on Android. Co-authored 3 papers published in top tier conferences.}}
+            Contributed to the App size reduction of SwiftKey by investigating optimizations to the byte code. Developed a new internal tool to test keyboard performance in rapid typing scenarios, capable of detecting regressions with precision of 2 ms. }}
         \entry
             {05–08 2014}
             {Google Summer of Code}
@@ -78,9 +76,13 @@
 \section{Awards, Publications \& Talks}
 	\begin{entrylist}
         \entry
-            {Tech-talk}
-            {Android App size reduction}{Londroid 2019. Hosted by Facebook London}
-            {\emph{Presented about my work on Proguard optimizations, R8 compiler and Install size investigation that contributed to reducing SwiftKey's download size by 50\% -- from 27.6 MB to 14.3 MB, and install size by 40\% -- from 81.5 MB to 48 MB}}
+            {Speaker}
+            {App size reduction at SwiftKey}{DroidCon Lisbon 2019}
+            {\emph{Presented our work on how we managed to reduce SwiftKey's download size by 50\%, and install size by 40\%}}
+        \entry
+            {Speaker}
+            {Android App size reduction}{Londroid, Facebook London 2019}
+            {}
         \entry
             {Publication}
             {Phonion: Practical Protection of Metadata in Telephony Networks}{}
