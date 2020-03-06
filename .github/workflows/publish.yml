@@ -31,6 +31,10 @@ jobs:
         working_directory: long/
         compiler: latexmk
         
+    - name: Format current date
+      id: format_date
+      run: echo "::set-output name=date::$(date +"%B %d, %Y")"
+    
     - name: Create new release
       id: create_release
       uses: actions/create-release@v1.0.0
@@ -38,7 +42,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: release-${{ github.sha }}
-        release_name: Latest CVs from ${{ github.ref }}
+        release_name: Latest CVs on {{ steps.format_date.outputs.date }}
         draft: false
         prerelease: false
 
