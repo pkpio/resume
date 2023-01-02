@@ -1,4 +1,4 @@
-name: Publish Master
+name: Publish all CVs
 
 on: 
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Release with all CVs
+    name: Release latest CVs
     runs-on: ubuntu-latest
 
     steps:
@@ -16,52 +16,28 @@ jobs:
       with:
         fetch-depth: 1
     
-    - name: Build short CV
+    - name: Build CV
       uses: dante-ev/latex-action@v0.2.0
       with:
         root_file: cv.tex
-        working_directory: short/
+        working_directory: ./
         args: -xelatex -file-line-error -interaction=nonstopmode
         compiler: latexmk
-
-    - name: Build long CV
+    
+    - name: Build Web3 CV
       uses: dante-ev/latex-action@v0.2.0
       with:
-        root_file: resume.tex
-        working_directory: long/
+        root_file: cv-web3.tex
+        working_directory: ./
+        args: -xelatex -file-line-error -interaction=nonstopmode
         compiler: latexmk
         
     - name: Format current date
       id: format_date
       run: echo "::set-output name=date::$(date +"%B %d, %Y")"
-    
-    - name: Create new release
-      id: create_release
-      uses: actions/create-release@v1.0.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: release-${{ github.sha }}
-        release_name: Latest CVs on ${{ steps.format_date.outputs.date }}
-        draft: false
-        prerelease: false
 
-    - name: Add short CV to latest release
-      uses: actions/upload-release-asset@v1.0.1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Release CVs
+      uses: softprops/action-gh-release@v1
       with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: short/cv.pdf
-        asset_name: cv-main.pdf
-        asset_content_type: application/pdf
-
-    - name: Add long CV to latest release
-      uses: actions/upload-release-asset@v1.0.1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: long/resume.pdf
-        asset_name: cv-full.pdf
-        asset_content_type: application/pdf
+        name: CVs as of ${{ steps.format_date.outputs.date }}
+        files: '*.pdf'
